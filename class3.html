@@ -62,10 +62,85 @@
         	<h3>What we'll be making today</h3>
         	<div class="left" style="width: 45%;">
         		<p>Today we will be making a site from scratch using divs and spans to create a header, footer, sidebar and a content area.</p>
-        	</div>
+        	    <h5>Agenda for Today</h5>
+				<ul>
+					<li>Highlighting text and links</li>
+					<li>Using Divs to structure the page</li>
+					<li>Padding, Margins, and Borders</li>
+					<li>Width, and Height</li>
+					<li>HTML Tables and Comments</li>
+				  </ul>
+			</div>
         	<div class="right" style="width: 45%;">
         		<img src="images/session2site.png">
         	</div>
+        </section>
+             <section>
+        	<h3>Element: Span</h3>
+        	<ul>
+        	<li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
+        	<li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
+        	</ul>
+        </section>     
+        <!-- Span -->
+        <section>
+          <h3>Span</h3>
+          <p>Span is used to apply a specific style inline</p>
+          
+<pre><code class ="html">
+.yellow{
+  color:yellow;
+}
+</code></pre>
+
+<pre><code class ="html">
+&lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
+</code></pre>
+
+<p>Paragraph with <span class ="yellow">yellow</span> text.</p>
+        </section>
+   
+        <!-- Pseudo class-->
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+          <div class ="left left-align" style="width:50%">
+          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
+          <br/>
+          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
+          </div>
+          Syntax:	
+<pre><code class ="html">
+selector:pseudo-class
+{
+  property:value;	
+}
+</code></pre>
+          Example:
+<pre><code class ="html">
+a:link
+{
+  text-decoration: none;
+}
+</code></pre>
+        </section>
+        
+        <!-- Pseudo class-->
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+<pre><code class ="html">
+  a:link	{color:#FF0000;} /* unvisited link */
+  a:visited	{color:#00FF00;} /* visited link */
+  a:hover	{color:#FF00FF;} /* mouse over link */
+  a:active	{color:#0000FF;} /* selected link */
+</code></pre>
+          <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
+          <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
+        </section>
+       
+        <!-- Exercise-->
+        <section>
+          <h3>Let's Develop It</h3>
+          <p>Add spans to highlight some text and add pseudo classes to your links</p>
         </section>
         
         <!-- Inline vs. block-->
@@ -160,78 +235,7 @@
          <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
          <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
         </section> 
-        <section>
-        	<h3>Element: Span</h3>
-        	<ul>
-        	<li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
-        	<li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
-        	</ul>
-        </section>     
-        <!-- Span -->
-        <section>
-          <h3>Span</h3>
-          <p>Span is used to apply a specific style inline</p>
-          
-<pre><code class ="html">
-.yellow{
-  color:yellow;
-}
-</code></pre>
-
-<pre><code class ="html">
-&lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
-</code></pre>
-
-<p>Paragraph with <span class ="yellow">yellow</span> text.</p>
-        </section>
-        <!-- Exercise-->
-         <section>
-          <h3>Let's Develop It</h3>
-         <p>Let's add some spans to our content to help highlight some text. </p>
-        </section>      
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-          <div class ="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-          <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-          </div>
-          Syntax:	
-<pre><code class ="html">
-selector:pseudo-class
-{
-  property:value;	
-}
-</code></pre>
-          Example:
-<pre><code class ="html">
-a:link
-{
-  text-decoration: none;
-}
-</code></pre>
-        </section>
-        
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class ="html">
-  a:link	{color:#FF0000;} /* unvisited link */
-  a:visited	{color:#00FF00;} /* visited link */
-  a:hover	{color:#FF00FF;} /* mouse over link */
-  a:active	{color:#0000FF;} /* selected link */
-</code></pre>
-          <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
-          <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
-        </section>
-       
-        <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
-        </section>
-        
+   
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
